@@ -3,7 +3,7 @@
   "version": 2,
   "functions": {
     "api/bot.py": {
-      "runtime": "python3.14"
+      "runtime": "python@3.12"
     }
   },
   "routes": [
