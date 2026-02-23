@@ -1,12 +1,14 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
   "functions": {
     "api/bot.py": {
-      "runtime": "@vercel/python"
+      "runtime": "python3.14"
     }
   },
   "routes": [
     {
-      "src": "/",
+      "src": "/.*",
       "dest": "api/bot.py"
     }
   ]
