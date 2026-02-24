@@ -1,13 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "version": 2,
   "functions": {
-    "api/bot.py": 
-  },
-  "routes": [
-    {
-      "src": "/.*",
-      "dest": "api/bot.py"
+    "api/**/*.py": {
+      "excludeFiles": "{tests/**,__tests__/**,**/*.test.py}"
     }
-  ]
+  }
 }
